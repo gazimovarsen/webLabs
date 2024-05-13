@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+{% block content %}
+<title>{{title}}</title>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="char col-6">
+            <img src="{{ url_for('static', filename='images/end.png') }}" alt="Комната с мебелью" style="vertical-align: bottom">
+        </div>
+        <div class="char col-6">
+            <section class="contact">
+                <h2>Хотите заказать проект?</h2>
+
+                <form id="myForm" method="post"> <!-- Добавляем method="post" -->
+                    <input type="text" id="name_place" name="name" placeholder="Name"> <!-- Добавляем атрибут name -->
+                    <textarea id="text_place" name="message" placeholder="Message"></textarea> <!-- Добавляем атрибут name -->
+                    <textarea id="text_place_2" name="message2" placeholder="Another Message"></textarea> <!-- Добавляем атрибут name -->
+                    <button type="submit" id="submitButton">Submit</button>
+                </form>
+                
+                <!-- Выводим полученный контент -->
+                <div id="contentPlaceholder"></div>
+            </section>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

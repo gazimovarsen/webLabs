@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    width: 40px;
+    height: 50px;
+}
+
+#pic1{
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-top: 300px;
+}
+
+#desc{
+    margin-top: 90px;
+}
+
+/* Полосы, разделяющие дивы */
+hr{
+    width:50%;
+    margin:0% 50%;
+}
+
+table th, td{
+    padding: 10px;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Стили для основного содержания */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#big_text{
+    font-size: 72px;
+}
+
+#big_text2{
+    font-size: 20px;
+}
+
+.links {
+    margin-left: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats{
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-images img {
+    max-width: 45%;
+    margin: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.project-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.fq{
+    color: #000000;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#a1{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.links a:hover{
+    background-color: #903ddd;
+}
+
+.active {
+    background-color: lightblue;
+}

@@ -1,0 +1,22 @@
+{% extends "base.html"%}
+{% block content %}
+<title>{{title}}</title>
+
+<div class="container-fluid">
+    <div class="row">
+        <section class="contact">
+
+            <form method="POST" action="/register">
+                <div class="auth-form">
+                    <p><input name="loginField" type="text" placeholder="Login"></p>
+                    <p><input name="passField" type="password" placeholder="Password"></p>
+                    <p><input name="emailField" type="email" placeholder="Email"></p>
+                    <button type="submit" id="sendbtn">Зарегистрировать</button>
+                </div>
+            </form>
+
+        </section>
+    </div>
+</div>
+
+{% endblock %}

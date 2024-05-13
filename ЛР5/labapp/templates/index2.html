@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% block content %}
+<title>{{title}}</title>
+
+<section class="projects">
+  <h2>Проекты</h2>
+  <div id="TOGGLEABLE" class="project-grid">
+    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Проект 1">
+    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Проект 2">
+    <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Проект 3">
+    <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="Проект 4">
+    <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="Проект 5">
+    <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Проект 6">
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Отзывы</h2>
+  <img src="{{ url_for('static', filename='images/Untitled.png') }}" alt="Комната с мебелью" style="vertical-align: bottom">
+</section>
+
+<table>
+  <tr>
+    <th>Сотрудник</th>
+    <th>Телефон</th>
+    <th>Опыт работы</th>
+  </tr>
+  <tr>
+    <td>Кнутова Полина Юрьевна</td>
+    <td>89174505035</td>
+    <td>20 лет</td>
+  </tr>
+  <tr>
+    <td>Газимов Арсен Шамилевич</td>
+    <td>89174177310</td>
+    <td>21 год</td>
+  </tr>
+</table>
+
+{% endblock %}
